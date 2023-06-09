@@ -77,10 +77,12 @@ header{
 }
 
 
-.logo-name {
-    margin-left: 5%;
-    margin-right: 2%;
-}
+.logo-link {
+    text-decoration: none !important;
+    color: #000 !important;
+    padding-right: 15px;
+  }
+
 
 @media (max-width: 768px){
     .region-selector{
@@ -98,4 +100,54 @@ header{
     header{
         flex-wrap: wrap;
     }
+}
+
+.basket-page {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    background-color: #E5F9DB;
+    display: none;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-left: 1px solid #83764F;
+    height: 100%;
+    width: 35%;
+    right: 0;
+    top: 0;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s, transform 0.3s;
+
+  }
+
+  .basket-page.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+
+
+.basket-page p:first-child{
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.basket-page > img{
+    width: 50px;
+    margin-top: 25%;
+}
+
+.basket-page > button {
+    border: none;
+    background: #83764F;
+    height: 40px;
+    border-radius: 8%;
+    margin-top: 3%;
+    width: 300px;
+    transition: .3s;
+}
+
+.basket-page > button:hover{
+    background: #A2A378;
 }
