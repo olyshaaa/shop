@@ -105,7 +105,7 @@ header{
 .basket-page {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: absolute;
-    background-color: #E5F9DB;
+    background: #F4F4F2;
     display: none;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
@@ -113,13 +113,14 @@ header{
     height: 100%;
     width: 35%;
     right: 0;
-    top: 0;
     text-align: center;
     opacity: 0;
     transform: scale(0.8);
     transition: opacity 0.3s, transform 0.3s;
-
+    /* box-shadow: -10px 5px 10px red; */
+    position: fixed;
   }
+
 
   .basket-page.show {
     opacity: 1;
@@ -150,4 +151,9 @@ header{
 
 .basket-page > button:hover{
     background: #A2A378;
+}
+
+.line{
+    border: none;
+    border-top: 3px solid #83764F;
 }

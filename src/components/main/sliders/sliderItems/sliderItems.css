@@ -1,0 +1,14 @@
+.slider-item {
+  width: 26%;
+  height: 100%;
+
+    color: black;
+    font-size: bold;
+    margin-right: 10px;
+    border-radius: 4%;
+
+  }
+
+img{
+    width: 100%;
+}

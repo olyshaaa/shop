@@ -1,0 +1,47 @@
+/* img{
+    width: 100%;
+} */
+
+.slider {
+    overflow: hidden;
+    flex-direction: row;
+    margin-top: 30px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .slider-container {
+    display: flex;
+    overflow-x: auto; /* добавляет горизонтальную прокрутку, если слайды не помещаются на экране */
+  }
+
+  .slide-item {
+    position: absolute;
+    opacity:0;
+  }
+
+  .slide-item.active {
+    display: block;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    transform: translateX(calc(-100% / 4 * var(--currentIndex)));
+  }
+
+  .slider-container > button{
+    height: 5%;
+    position: absolute;
+    z-index: 5;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: red;
+    color: white;
+    opacity: 0.8;
+    border-radius: 50%;
+  }
+#nextBtn{
+  right: 0;
+}

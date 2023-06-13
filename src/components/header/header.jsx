@@ -27,6 +27,7 @@ const Header = () => {
 
 
 
+
   }, []);
 
   return (
@@ -59,10 +60,11 @@ const Header = () => {
     <div className="basket-page">
         <p>Кошик</p>
         <img src={image}/>
-
+        <div id="overlay"></div> {/* dimming effect */}
         <p>В кошику немає товарів</p>
         <button className="basket-page-close">За покупками</button>
       </div>
+      <hr class="line" />
     </>
   );
 };
