@@ -1,4 +1,4 @@
-.slider-container:hover .slider > button{
+/* .slider-container:hover .slider > button{
   display: block;
 }
 .slider {
@@ -14,7 +14,7 @@
     width: 65%;
     display: flex;
     position: relative;
-    overflow-x: auto; /* добавляет горизонтальную прокрутку, если слайды не помещаются на экране */
+
   }
 
   .slide-item {
@@ -46,4 +46,22 @@
   }
 #nextBtn{
   right: 0;
+}
+ */
+
+ .swiper-slide {
+  width: 25%; /* Установите желаемую ширину слайда, например, 20% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-item {
+  /* Настройте стили для содержимого слайда */
+  text-align: center;
+  padding: 20px;
+}
+
+.swiper{
+  width: 25%;
 }
