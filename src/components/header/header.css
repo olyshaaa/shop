@@ -157,3 +157,82 @@ header{
     border: none;
     border-top: 3px solid #83764F;
 }
+
+.region-selector-page{
+    position: fixed;
+    overflow: auto;
+    height: 100%;
+    display: none;
+    position: absolute;
+    background-color: #F4F4F2;
+    z-index: 5;
+    border-radius: 8%;
+}
+.region-selector-page::-webkit-scrollbar {
+    width: 0.5em; /* Ширина полосы прокрутки */
+  }
+
+  .region-selector-page::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Цвет фона полосы прокрутки */
+  }
+
+  .region-selector-page::-webkit-scrollbar-thumb {
+    background-color: #888; /* Цвет полосы прокрутки */
+  }
+
+
+
+.region-city,
+.region-name{
+    list-style-type: none;
+}
+
+.region-ciry:hover{
+    cursor: pointer;
+}
+
+.region-name-button:disabled{
+    color: black;
+    font-size: 16px;
+    background-color: #94B49F;
+    border-radius: 3%;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.region-city-button{
+    color: black;
+    font-size: 16px;
+    background-color: #A2A378;
+    border-radius: 3%;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.region-city-button:hover{
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.region-selector-page > p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.region-selector-page > span{
+    text-align: center;
+    font-size: 18px;
+}
+
+.region-selector-close{
+    border: none;
+    background: #83764F;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.region-selector-close:hover{
+    background: #A2A378;
+}

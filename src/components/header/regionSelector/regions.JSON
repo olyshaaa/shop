@@ -1,0 +1,210 @@
+[
+    {
+        "name1": "Київ",
+        "name2": "Запоріжжя",
+        "name3": "Дніпро",
+        "name4": "Львів",
+        "name5": "Одеса",
+        "name6": "Харків"
+    },
+    {
+        "regionName": "Івано-Франківська область",
+        "region-city": "Івано-франківськ",
+        "region-city1": "Калуш",
+        "region-city2": "Коломия",
+        "region-city3": "Косів"
+    },
+    {
+        "regionName": "Волинська область",
+        "region-city": "Володимир",
+        "region-city1": "Ковель",
+        "region-city2": "Луцьк",
+        "region-city3": "Нововолинськ"
+    },
+    {
+        "regionName": "Вінницька область",
+        "region-city": "Вінниця",
+        "region-city1": "Жмеринка",
+        "region-city2": "Тульчин",
+        "region-city3": "Хмільник"
+    },
+    {
+        "regionName": "Дніпропетровська область",
+        "region-city": "Дніпро",
+        "region-city1": "Кам'янське",
+        "region-city2": "Кривий ріг",
+        "region-city3": "Марганець",
+        "region-city4": "Новомосковськ",
+        "region-city5": "Нікополь",
+        "region-city6": "Півлоград",
+        "region-city7": "Першотравневськ"
+    },
+    {
+        "regionName": "Донецька область",
+        "region-city": "Бахмут",
+        "region-city1": "Волноваха",
+        "region-city2": "Дружківка",
+        "region-city3": "Костянтинівка",
+        "region-city4": "Краматорськ",
+        "region-city5": "Міруполь",
+        "region-city6": "Покровськ",
+        "region-city7": "Селидове",
+        "region-city8": "Слов'янськ"
+    },
+    {
+        "regionName": "Житомирська область",
+        "region-city": "Бердичів",
+        "region-city1": "Житомір",
+        "region-city2": "Дружківка",
+        "region-city3": "Звягель",
+        "region-city4": "Коростень"
+    },
+    {
+        "regionName": "Закарпатська область",
+        "region-city": "Виноградів",
+        "region-city1": "Мукачево",
+        "region-city2": "Ужгород",
+        "region-city3": "Хуст"
+    },
+    {
+        "regionName": "Запорізька область",
+        "region-city": "Бердянськ",
+        "region-city1": "Вільнянськ",
+        "region-city2": "Запоріжжя",
+        "region-city3": "Мелітополь"
+    },
+    {
+        "regionName": "Київська область",
+        "region-city": "Ірпінь",
+        "region-city1": "Березань",
+        "region-city2": "Бориспіль",
+        "region-city3": "Боярка",
+        "region-city4": "Бровари",
+        "region-city5": "Буча",
+        "region-city6": "Біла Церква",
+        "region-city7": "Васильків",
+        "region-city8": "Вишгород",
+        "region-city9": "Вишневе",
+        "region-city10": "Гостомель",
+        "region-city11": "Київ",
+        "region-city12": "Обухів",
+        "region-city13": "Переяслав-Хмельницький",
+        "region-city14": "Петропавльвська Борщагівка",
+        "region-city15": "Ржищів",
+        "region-city16": "Славутич",
+        "region-city17": "Софіївська Борщагівка",
+        "region-city18": "Українка",
+        "region-city19": "Фастів",
+        "region-city20": "Яготин"
+    },
+    {
+        "regionName": "Кіровоградська область",
+        "region-city": "Гайворон",
+        "region-city1": "Кропивницький",
+        "region-city2": "Новомиргород",
+        "region-city3": "Олександрія",
+        "region-city4": "Світловодськ"
+    },
+    {
+        "regionName": "Луганська область",
+        "region-city": "Лисичанськ",
+        "region-city1": "Сватово",
+        "region-city2": "Старобільськ",
+        "region-city3": "Стаханов",
+        "region-city4": "Сєвєродонецьк"
+    },
+    {
+        "regionName": "Львівська область",
+        "region-city": "Дрогобич",
+        "region-city1": "Золочів",
+        "region-city2": "Львів",
+        "region-city3": "Моршин",
+        "region-city4": "Новояворівськ",
+        "region-city5": "Перемишляни",
+        "region-city6": "Пустомити",
+        "region-city7": "Стрий",
+        "region-city8": "Червоноград"
+    },
+    {
+        "regionName": "Миколаївська область",
+        "region-city": "Баштанка",
+        "region-city1": "Вознесенськ",
+        "region-city2": "Миколаїв",
+        "region-city3": "Первомайськ"
+    },
+    {
+        "regionName": "Одеська область",
+        "region-city": "Ізмаїл",
+        "region-city1": "Білгород-Дністровський",
+        "region-city2": "Одеса",
+        "region-city3": "Чорноморськ"
+    },
+    {
+        "regionName": "Полтавська область",
+        "region-city": "Горішні Плавні",
+        "region-city1": "Кременчук",
+        "region-city2": "Лубни",
+        "region-city3": "Миргород",
+        "region-city4": "Полтава"
+    },
+    {
+        "regionName": "Рівненська область",
+        "region-city": "Острог",
+        "region-city1": "Радивилів",
+        "region-city2": "Рівне"
+    },
+    {
+        "regionName": "Сумська область",
+        "region-city": "Конотоп",
+        "region-city1": "Охтирка",
+        "region-city2": "Ромни",
+        "region-city3": "Суми",
+        "region-city4": "Шостка"
+    },
+    {
+        "regionName": "Тернопільска область",
+        "region-city": "Кременець",
+        "region-city1": "Тернопіль",
+        "region-city2": "Чортків"
+    },
+    {
+        "regionName": "Харківська область",
+        "region-city": "Лозова",
+        "region-city1": "Первомайський",
+        "region-city2": "Харків"
+    },
+    {
+        "regionName": "Херсонська область",
+        "region-city": "Херсон"
+    },
+    {
+        "regionName": "Хмельницька область",
+        "region-city": "Кам'янець-Подільський",
+        "region-city1": "Полонне",
+        "region-city2": "Славута",
+        "region-city3": "Хмельницький"
+    },
+    {
+        "regionName": "Черкаська область",
+        "region-city": "Звенигородка",
+        "region-city1": "Золотоноша",
+        "region-city2": "Сміла",
+        "region-city3": "Умань",
+        "region-city4": "Черкаси"
+    },
+    {
+        "regionName": "Чернівецька область",
+        "region-city": "Вижниця",
+        "region-city1": "Хотин",
+        "region-city2": "Чернівці",
+        "region-city3": "с.Романківці"
+    },
+    {
+        "regionName": "Чернігівська область",
+        "region-city": "Корюківка",
+        "region-city1": "Новгород-Сіверський",
+        "region-city2": "Ніжин",
+        "region-city3": "Прилуки",
+        "region-city4": "Чернігів"
+    }
+]
