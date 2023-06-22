@@ -29,7 +29,7 @@ export default () => {
     navigation
     loop={true}
     pagination={{ clickable: true }}
-    autoplay={{ delay: 3000, stopOnLastSlide: false, disableOnInteraction:true }}
+    autoplay={{ delay: 3000, stopOnLastSlide: false, disableOnInteraction:false }}
     >
       <SwiperSlide>
             <SliderItems photo={image} title={'Досконалість матового покриття'} subtitle={'Створіть неповторний образ, виглядайте бездоганно та відчувайте себе впевнено '} backgroundColor={'#F7E1AE'} />

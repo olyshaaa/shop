@@ -5,6 +5,7 @@ import image from './img/shopping-basket.png';
 /* import regionsData from './regionSelector/regions.JSON' */
 
 import './header.css';
+import './basket.css'
 
 const Header = () => {
   const [data, setData] = useState(null)

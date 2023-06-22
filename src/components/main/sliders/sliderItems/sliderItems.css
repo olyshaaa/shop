@@ -5,11 +5,9 @@
   font-size: bold;
   margin-right: 10px;
   border-radius: 4%;
-
-
   }
 
-img{
+.slider-item-img{
     width: 100%;
     min-width: 0;
 }

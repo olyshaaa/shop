@@ -8,9 +8,9 @@ const SliderItems = ({ photo, title, subtitle, backgroundColor }) => {
     };
     return(
     <div className='slider-item' style={itemStyle}>
-        <img src={photo} alt=''></img>
-        <h3>{title}</h3>
-        <p>{subtitle}</p>
+        <img className='slider-item-img' src={photo} alt=''></img>
+        <h3 className='slider-item-text slider-item-h3'>{title}</h3>
+        <p className='slider-item-text slider-item-p'>{subtitle}</p>
     </div>)
 }
 

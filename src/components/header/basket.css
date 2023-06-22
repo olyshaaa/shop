@@ -1,0 +1,15 @@
+@media (max-width: 870px){
+    .basket-page > button{
+        width: auto;
+    }
+    .basket-page{
+        width: 100%;
+        z-index: 5;
+    }
+}
+
+@media (min-width: 1408px){
+    .basket-page > img{
+        margin-top: 50%;
+    }
+}
