@@ -1,14 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import image from './img/shopping-basket.png';
-/* import json file */
-/* import regionsData from './regionSelector/regions.JSON' */
 
 import './header.css';
 import './basket.css'
 
 const Header = () => {
   const [data, setData] = useState(null)
+  const [content, setContent] = useState('Україна')
+  const regionSelectorPage = document.querySelector('.region-selector-page')
+
+  function handleClick (city){
+    console.log(city);
+    setContent(city);
+    regionSelectorPage.style.display = 'none';
+  }
+
+
   useEffect(() => {
     const regionsData = require('./regionSelector/regions.JSON');
     const fetchData = async () => {
@@ -22,9 +30,7 @@ const Header = () => {
       }
     };
 
-
     fetchData();
-
 
     const basketButton = document.querySelector('.header-button.basket');
     const basketPage = document.querySelector('.basket-page');
@@ -34,9 +40,6 @@ const Header = () => {
     const regionSelectorPage = document.querySelector('.region-selector-page')
     const regionSelectorClose = document.querySelector('.region-selector-close')
     /* getting data from json */
-
-
-
     basketButton.addEventListener('click', () => {
       basketPage.style.display = 'block';
       setTimeout(() => {
@@ -68,6 +71,7 @@ const Header = () => {
 
 }, []);
 
+
   return (
     <>
       <header>
@@ -75,7 +79,7 @@ const Header = () => {
           <h2 className="logo-name">CharmVie</h2>
         </Link>
         <input className="header-search" type="search" placeholder="Введіть пошуковий запит" />
-        <button className="region-selector" type="button">Україна</button>
+        <button className="region-selector" type="button">{content}</button>
         <button className="header-button login">
           <i className="header-icons login-icon fas fa-solid fa-user"></i>
           <p>Увійти</p>
@@ -100,34 +104,31 @@ const Header = () => {
       {/* region selector's page */}
       <div className='region-selector-page'>
         <p>Україна</p>
-        <button className='region-selector-close'>×</button>
         <span>Обравши регіон, ми покажемо орієнтовний термін доставки при пошуку товарів</span>
+        <button id="regionSelector" class="region-selector-close">×</button>
         <ul>
-          {data &&
-            data.map((region, index) => (
-              <li className='region-name' key={index}>
-                <button className='region-name-button' disabled>
-                {region.regionName}
+  {data &&
+    data.map((region, index) => (
+      <li className='region-name' key={index}>
+        <button className='region-name-button' disabled>
+          {region.regionName}
+        </button>
+        <ul>
+          {Object.keys(region)
+            .filter((key) => key.startsWith('region-city'))
+            .map((cityKey, cityIndex) => (
+              <li className='region-city' key={`${region.regionName}-${cityKey}`}>
+                <button onClick={()=> handleClick(region[cityKey])} className='region-city-button'>
+                  {region[cityKey]}
                 </button>
-                <ul>
-                  {Object.keys(region)
-                    .filter((key) => key.startsWith('region-city'))
-                    .map((cityKey, cityIndex) => (
-                      <>
-
-                      <li className='region-city' key={cityIndex}>
-                        <button className='region-city-button'>{region[cityKey]}</button>
-                        </li>
-                        </>
-                    ))}
-                </ul>
               </li>
             ))}
         </ul>
+      </li>
+    ))}
+</ul>
       </div>
       <hr className="line" />
-
-
     </>
   );
   };

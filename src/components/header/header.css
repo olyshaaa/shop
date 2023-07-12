@@ -203,18 +203,25 @@ header{
 
 .region-city-button{
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     background-color: #A2A378;
     border-radius: 3%;
     border: none;
     width: 100%;
     text-align: left;
+    /* padding-top: 5px; */
+    margin-top: 2px;
+    transition: .2s;
+
 }
 
 .region-city-button:hover{
     cursor: pointer;
-    font-size: 17px;
+    font-size: bold;
+    background-color: #919262;
+
 }
+
 
 .region-selector-page > p{
     text-align: center;
@@ -236,4 +243,12 @@ header{
 .region-selector-close:hover{
     background: #A2A378;
 }
+
+
+.region-selector-page.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+
 
